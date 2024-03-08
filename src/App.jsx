@@ -1,66 +1,28 @@
-import './App.css'
-
-/* const mainListDiv = document.getElementById("mainListDiv"),
-    mediaButton = document.getElementById("mediaButton");
-
-mediaButton.onclick = function () {
-    
-    "use strict";
-    
-    mainListDiv.classList.toggle("show_list");
-    mediaButton.classList.toggle("active");
-    
-}; */
-
-function Header() {
-
-  return (
-    <>
-    <nav class="nav">
-      <div class="container">
-        <div class="logo">
-            <a href="#">Logo</a>
-          </div>
-        <div class="main_list" id="mainListDiv">
-            <ul>
-                <li><a href="#">Currency</a></li>
-                <li><a href="#">Items</a></li>
-                <li><a href="#">Accounts</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Swap</a></li>
-                <li><a href="#">Sell</a></li>
-            </ul>
-        </div>
-        <div class="media_button">
-            <button class="main_media_button" id="mediaButton">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-      </div>
-    </nav>
-    
-<section class="home"></section>
-    </>
-  )
-}
+import './scss/_App.scss';
+import Header from './components/Header/Header.jsx';
+import Footer from './components/Footer/Footer';
+import ItemCard from './components/ItemCard/ItemCard';
 
 function App() {
+  return (
+    <>
+      <Header />
+      <section className="big_container">
+        <div clasName="list_container">
+        <h1 className="title">Condimentum consectetur</h1>
+        <div className="subfilters">
+         <div className="list">
+        <ItemCard />
+        <ItemCard />
+        </div> 
+        </div>
 
-return(
-
-  <div>
-
-    <Header />
-
-  </div>
-
-)
-
-
+        </div>
+      </section>
+      
+      <Footer />
+    </>
+  );
 }
 
-
-
-export default App
+export default App;

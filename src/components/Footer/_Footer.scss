@@ -1,0 +1,92 @@
+$font-stack: "Source Sans Pro", sans-serif;
+$color-tuna: #353748;
+$color-kelp: #484635;
+$color-monza: #cb0015;
+$color-white: #fefefe;
+$color-bkgd: #f4f4f4;
+
+// footer
+footer {
+  background: $color-tuna;
+  color: $color-white;
+  grid-column: 1 / 3;
+  grid-row: 3;
+  text-align: center;
+  bottom: 0;
+  height: 64px;
+  position: absolute;
+  width: 100%;
+  padding-top: 1em }
+
+
+  .about_container {
+    background: #303141;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+  .about {
+    width: 1260px;
+    margin: auto;
+  }
+  .payment_container {
+    background-color: #2b2c3c;
+    padding: 30px 0;
+  }
+  .payment {
+    max-width: 1260px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .about_info {
+    display: flex;
+    padding-top: 40px;
+  }
+  .footer_link {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.5;
+  }
+  .logo_section {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .email {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  .info_section {
+    flex: 1 0 0%;
+    padding-top: 24px;
+    padding-left: 16px;
+  }
+  .info_title {
+    font-weight: bold;
+    padding-bottom: 8px;
+  }
+  .reviews {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+  }
+  .reviews div {
+    display: flex;
+  }
+  .reviews span {
+    flex: 0 0 auto;
+    opacity: 0.5;
+    font-size: 14px;
+  }
+  .legal {
+    margin-top: 64px;
+    text-align: center;
+    opacity: 0.5;
+  }
+
+  @media (min-width: 40.625em) {
+    // 650px
+    footer { grid-row: 3; } } 
