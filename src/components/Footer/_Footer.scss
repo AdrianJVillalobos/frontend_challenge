@@ -16,7 +16,8 @@ footer {
   height: 64px;
   position: absolute;
   width: 100%;
-  padding-top: 1em }
+  padding-top: 1em;
+}
 
 
   .about_container {
@@ -87,6 +88,8 @@ footer {
     opacity: 0.5;
   }
 
-  @media (min-width: 40.625em) {
-    // 650px
-    footer { grid-row: 3; } } 
+  @media screen and (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr); 
+    }
+  }

@@ -1,21 +1,22 @@
+// Variables
+
+$color-white: #fefefe;
+
 #root {
 
-  height: 1000px; 
-
-}
-
+  min-height: 100vh;
+} 
 
 *{
     margin: 0;
     padding: 0;
-    //box-sizing: border-box;
     font-size: 1em;
 
   }
 
   html,
   body {
-    height: 1000px;
+    
     font-family: -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
@@ -50,21 +51,22 @@
     font: inherit;
     outline: inherit;
   }
-  .big_container {
-    max-width: 630px;
+
+  .list_container {
+    max-width: 800px;
     max-height: 600px;
     margin: auto;
     margin-top: 8rem;
     margin-bottom: 64px;
-    padding: 0px 10px;
-  }
-  .title {
-    margin-bottom: 16px;
-    letter-spacing: 2px;
-    display: none;
-  }
+    }
 
-  .list_container {
+  .main_container {
+    display: flex; 
+    justify-content: center;
+    max-width: 800px;
+    max-height: 600px;
+    margin: auto;
+    margin-bottom: 64px;
     background-color: #303141;
     border: solid 1px #445373;
     border-radius: 4px;
@@ -72,23 +74,23 @@
     box-shadow: -1px -1px 16px -2px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: -1px -1px 16px -2px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: -1px -1px 16px -2px rgba(0, 0, 0, 0.5);
+    }
+  .title {
+    font-size: 2.2rem;
+    color:$color-white;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+    display: none;
   }
+
 
   .list {
+    width: 680px;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat( 2, 1fr);
   }
 
-  .subfilters {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-  .subfilters div {
-    width: 50%;
-  }
   .input {
     border: none;
     padding: 12px;
@@ -97,12 +99,7 @@
     width: 100%;
     height: 100%;
   }
-  .input:focus {
-    outline: none;
-  }
-  .input_icon {
-    padding-left: 44px;
-  }
+
   .icon {
     position: absolute;
     width: 24px;
@@ -114,29 +111,21 @@
     .items_shown {
       display: block;
     }
-    .sort_select {
-      flex: 0 0 auto;
-      width: 50%;
-      display: flex;
-      justify-content: flex-end;
+  }
+
+  @media screen and (max-width: 768px) {
+    .list {
+      grid-template-columns: repeat(1, 1fr); 
     }
-    .sort_select .dropdown {
-      max-width: 176px;
+    .list_container {
+
+      margin-top: 2rem;
     }
   }
+
   @media (min-width: 768px) {
     .title {
       display: block;
-    }
-    .select_game {
-      width: 25%;
-      margin-bottom: 0;
-    }
-    .search {
-      flex: 1 0 0%;
-    }
-    .subfilters {
-      width: 344px;
     }
     .main {
       max-width: 1260px;

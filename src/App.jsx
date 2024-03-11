@@ -7,18 +7,16 @@ function App() {
   return (
     <>
       <Header />
-      <section className="big_container">
-        <div clasName="list_container">
-        <h1 className="title">Condimentum consectetur</h1>
-        <div className="subfilters">
+
+    <div className="list_container">
+      <h1 className="title">Condimentum consectetur</h1>
+      <div className="main_container">
          <div className="list">
         <ItemCard />
         <ItemCard />
-        </div> 
         </div>
-
-        </div>
-      </section>
+      </div>
+    </div>
       
       <Footer />
     </>

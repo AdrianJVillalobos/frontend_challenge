@@ -2,6 +2,7 @@
 
 $color-tuna: #353748;
 $color-white: #fefefe;
+$color-accent: #51408f;
 
 
 /* Navbar section */
@@ -13,6 +14,13 @@ $color-white: #fefefe;
     line-height: 65px;
     text-align: center;
     background-color: $color-tuna;
+  }
+
+  .nav_container {
+    display: flex;
+    outline-width: 0.5px;
+    outline-style: solid;
+    outline-color: $color-accent;
   }
   
 /*   .nav div.logo{
@@ -37,6 +45,7 @@ $color-white: #fefefe;
     height: 65px;
     display: flex;
     justify-content: flex-start;
+    margin-left: 2rem;
   }
   
   .nav div.main_list ul{
@@ -64,11 +73,51 @@ $color-white: #fefefe;
     color: #c0c0c0;
   }
   
-  span {
+  .icon_spacer {
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+  }
+
+  .action_btn {
+    width: 8rem;
+    height: 2.3rem;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    font-size: 0.875rem;
+    gap: 4px;
+    letter-spacing: 1px;
+  }
+
+  .sign_in {
+    margin-left: 5px;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 4px;
+    color: #303141;
+    background-color: #39e29d;
+    font-weight: bold;
+    gap: 16px;
+    margin-left: 12px;
+  }
+  
+  .align {
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .spacer {
+
+    flex: 1 1;
 
   }
 
@@ -150,6 +199,7 @@ $color-white: #fefefe;
     .container{
         margin: 0;
     }
+
     
   }
 
@@ -157,6 +207,12 @@ $color-white: #fefefe;
     
     .container{
         margin: 0;
+    }
+
+    .action_btn {
+
+      display: none;
+
     }
     
     .nav div.logo{

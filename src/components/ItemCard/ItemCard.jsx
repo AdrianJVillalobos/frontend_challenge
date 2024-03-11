@@ -1,4 +1,5 @@
 import './_ItemCard.scss';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 export default function ItemCard() {
 
@@ -32,12 +33,23 @@ export default function ItemCard() {
         <p className="description" >Test object for a card component</p>
       </div>
       <div className="action_area">
-        <button className="styles.detail_btn">
-          Details
-        </button>
-        <button className="add_btn">
-          <span>Add</span>
-        </button>
+      <span className="details_btn">
+                <span className="details">
+                    <a className="align" href="#"> 
+                        Details
+                    </a>
+
+                </span>
+              </span>
+            <span className="cart_btn">
+                <span className="add">
+                    <a className="align" href="#"> 
+                        Add
+                        <ShoppingCartIcon/>
+                    </a>
+
+                </span>
+              </span>
       </div>
     </div>
     </>

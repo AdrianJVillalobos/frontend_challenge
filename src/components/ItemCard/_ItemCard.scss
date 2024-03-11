@@ -3,54 +3,8 @@
     box-sizing: border-box;
   }
 
-/*   .card-container {
-    max-width: 900px;
-    margin: 20px auto;
-    font-family: sans-serif;
-    text-align: center;
-    background-color: #edf3f8;
-  }  
-  .c-card {
-    display: inline-block;
-    width: 100%;
-    max-width: 350px;
-    margin: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: left;
-    background: #fff;
-    box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
-  
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 20px -15px rgba(0, 0, 0, 0.3);
-    }
-
-    &__image {
-        max-width: 100%;
-      }
-      &__body {
-        padding: 20px;
-      }
-      &__title {
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 1.2;
-        margin: 0;
-        padding: 0;
-        text-transform: uppercase;
-      }
-      &__subtitle {
-        font-size: 13px;
-        margin-top: 5px;
-        padding: 0;
-      }
-      &__intro {
-        margin-bottom: 0;
-      }
-  } */
-
  .container {
+    color: #cecfd4;
     background-color: #323648;
     border-radius: 10px;
     padding: 12px;
@@ -77,6 +31,7 @@
     color: #39e29d;
   }
   .amount_input {
+    color: #cecfd4;
     height: 100%;
     width: 64px;
     border: none;
@@ -88,26 +43,10 @@
     margin-bottom: 8px;
     font-size: 14px;
   }
-  .category {
-    border: 1px solid #39e29d;
-    border-radius: 20px;
-    height: 25px;
-    padding: 2px;
-    width: 25px;
-    -o-object-fit: contain;
-    object-fit: contain;
-  }
   .price {
     font-weight: bold;
     letter-spacing: 0.68px;
     font-size: 14px;
-  }
-  .discounted {
-    font-size: 14px;
-    margin-left: 8px;
-    text-decoration: line-through;
-    text-decoration-color: #fb4a4a;
-    text-decoration-thickness: 2px;
   }
   .description {
     opacity: 0.5;
@@ -120,40 +59,63 @@
     gap: 8px;
     margin-top: auto;
   }
-  .btn {
-    padding: 8px;
+  .details_btn {
+    width: 8rem;
+    height: 2.3rem;
     border-radius: 4px;
+    padding: 10px;
     cursor: pointer;
-    width: 100%;
+    display: flex;
+    align-items: end;
+    font-size: 0.875rem;
+    gap: 4px;
+    letter-spacing: 1px;
   }
-  .detail_btn {
-    background-color: #3e4254;
+
+  .details {
+    margin-left: 5px;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 4px;
     color: #cecfd4;
+    background-color: #3e4254;
     font-weight: bold;
+    gap: 16px;
+    margin-left: 12px;
   }
-  .detail_btn:hover {
-    background-color: #454a5a;
+
+  .cart_btn {
+    width: 8rem;
+    height: 2.3rem;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    font-size: 0.875rem;
+    gap: 4px;
+    letter-spacing: 1px;
   }
-  .add_btn {
+
+  .add {
+    margin-left: 5px;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 4px;
+    color: #cecfd4;
     background-color: #5762d5;
+    font-weight: bold;
+    gap: 16px;
+    margin-left: 12px;
+  }
+  
+  .align {
+    width: 6rem;
+    height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-      0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  }
-  .add_btn * {
-    flex: 1 1 auto;
-  }
-  .add_btn div {
-    background-color: #454da8;
-    padding: 4.5px 9px;
-  }
-  .add_btn:hover {
-    background-color: #5860bb;
-  }
-  .add_btn:hover div {
-    background-color: #545baf;
+
   }
   .hidden {
     visibility: hidden;
